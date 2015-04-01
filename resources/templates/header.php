@@ -9,6 +9,6 @@
         <script src="assets/js/script.js"></script>
     </head>
     <body lang="en">
-        <header>
-            <img class="logo img-centered" alt="GPA Calculator" src="assets/img/logo.png">
+        <header class="centered">
+            <img class="logo" alt="GPA Calculator" src="assets/img/logo.png">
         </header>
