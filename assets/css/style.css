@@ -20,6 +20,14 @@ body{
     margin-top: 10%; 
 }
 
+.hide{
+    display: none;
+}
+
+.show{
+    display: inherit;   
+}
+
 /*SITE HEADER*/
 header{
     height: auto;
