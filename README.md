@@ -1,2 +1,2 @@
 # gpaCalculator
-A GPA Calculator using PHP, project for school
+A GPA Calculator using PHP, school project
