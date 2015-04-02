@@ -1,6 +1,13 @@
 <?php include 'resources/templates/header.php'; ?>
 <section>
-    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="formHandler.php">
+    <span class="centered" id="error">
+        <?php
+            if(isset($error)){
+                echo 'Fill out all the fields';   
+            }
+        ?>
+    </span>
+    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="resources/formHandler.php">
         <span id="sign-up" class="show">
             <label for="firstName">First Name</label>
             <input type="text" name="firstName" required><br />
@@ -13,7 +20,8 @@
         <input type="password" name="password"><br />
         <a href="#" onclick="changeSign(this)">Already have an Account? Sign in</a><br />
         <input type="hidden" name = "flag" value="signUp">
-        <input type="submit" name="submit" value="Sign up">
+        <input type="submit" name="submit" value="Sign Up">
     </form>
 </section>
+<?php require 'resources/formHandler.php' ?>
 <?php include 'resources/templates/footer.php'; ?>
