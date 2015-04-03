@@ -30,10 +30,9 @@
         }elseif($_GET['submit'] == "Add Course"){
             foreach($users as $other){
                 if($other->email == unserialize($_SESSION['user'])->email){
-                    if($other->password == $_POST['password']){
-                        $_SESSION['user'] = serialize($other);
-                        redirect("home");
-                    }
+                    $
+                    $_SESSION['user'] = serialize($other);
+                    redirect("home");
                 }
             }
          }
