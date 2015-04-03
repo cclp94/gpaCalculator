@@ -13,9 +13,9 @@
         <header class="centered">
             <img class="logo" alt="GPA Calculator" src="assets/img/logo.png">
             <?php
-                if(isset($_SESSION)){
+                if(isset($_SESSION['user'])){
             ?>
-                    <a class="float-right logoff" href="../../index.php"></a>       
+                    <a class="float-right sign-out" href="index.php">Sign out</a>       
         <?php  }
             ?>
         </header>

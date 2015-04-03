@@ -12,6 +12,11 @@ body{
     text-align: center;
 }
 
+.fixed-bottom{
+    position: fixed;
+    bottom: 0px;
+}
+
 .centered-block{
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +60,26 @@ header{
     width: 200px;
 }
 
+.sign-out{
+    font-size: 21px;
+    font-weight: 500;
+    right: 25px;
+    position: absolute;
+    top: 79px;
+    color: lightgreen
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgba(50,50,50,0.4);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
 /* Sign in Form*/
 #sign{
     width: 300px;
@@ -91,9 +116,37 @@ header{
 }
 
 #courses{
-    width: 60%;
+    width: 65%;
     margin: 20px;
     padding: 5px;
+}
+
+#addCourse{
+    width: 50%;   
+}
+
+/* Courses Table*/
+#courses-table{
+    border: 5px solid darkgray;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;  
+    margin-bottom: 150px;
+}
+
+#courses-table td, #courses-table th{
+    border: 2px solid darkgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#courses-table tr:nth-child(odd){
+    background-color: #EEEEEE;   
 }
 
 /*==============aside=================*/
@@ -104,6 +157,31 @@ header{
     height: 100%;
     padding-left: 10px;
     border-left: 1px solid #DDDDDD;
+    margin-bottom: 150px;
+}
+
+.meta{
+    display: block;
+    width: 75px;
+    height: 55px;
+    background-color: #666666;
+    color: white;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 20px;;
+}
+
+.meta:first-of-type{
+    border: 10px solid crimson;
+}
+
+.meta:nth-of-type(2){
+    border: 10px solid darkgreen;
+}
+
+.meta:nth-of-type(3){
+    border: 10px solid darkslateblue;
 }
 
 

@@ -17,7 +17,7 @@ session_start();
             }
         ?>
     </span>
-    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="resources/formHandler2.php">
+    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="resources/formHandler.php">
         <span id="sign-up" class="show">
             <label for="firstName">Full Name</label>
             <input type="text" name="name" id="name" required><br />
@@ -26,9 +26,15 @@ session_start();
         <input type="email" name="email" required><br />
         <label for="password">Password&nbsp</label>
         <input type="password" name="password" required><br />
-        <a href="#" onclick="changeSign(this)">Already have an Account? Sign in</a><br />
+        <a href="#" id="changeSignLink" onclick="changeSign(this)">Already have an Account? Sign in</a><br />
         <input type="hidden" name = "flag" value="signUp">
         <input type="submit" name="submit" value="Sign Up">
     </form>
 </section>
-<?php include 'resources/templates/footer.php'; ?>
+<?php
+    if(isset($_COOKIE['hasAccount'])){
+        echo '<script> changeSign(document.getElementById("changeSignLink")); </script>';   
+    }
+?>
+</body>
+</html>
