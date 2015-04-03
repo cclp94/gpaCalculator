@@ -17,7 +17,7 @@ session_start();
             }
         ?>
     </span>
-    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="resources/formHandler.php">
+    <form id="sign" class="form-sign centered-block centered-vert" method="post" action="resources/formHandler2.php">
         <span id="sign-up" class="show">
             <label for="firstName">Full Name</label>
             <input type="text" name="name" id="name" required><br />

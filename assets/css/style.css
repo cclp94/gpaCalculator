@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    color: #333333;
     width: 100%;
     background-image: url(../img/bg.jpg);
     background-size: cover;
@@ -26,6 +27,18 @@ body{
 
 .show{
     display: inherit;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.clearfix{
+    float: none;   
 }
 
 /*SITE HEADER*/
@@ -62,6 +75,44 @@ header{
 #sign a{
     font-size: 11px;   
 }
+
+/* Home user Page*/
+
+/*==============main section==========*/
+#mainInfo{
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+#mainInfo h1{
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 5px;
+}
+
+#courses{
+    width: 60%;
+    margin: 20px;
+    padding: 5px;
+}
+
+/*==============aside=================*/
+
+#sideInfo{
+    width: 30%;
+    background-color: white;
+    height: 100%;
+    padding-left: 10px;
+    border-left: 1px solid #DDDDDD;
+}
+
+
+
+
+
+
+
+
 
 
 

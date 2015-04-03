@@ -12,4 +12,10 @@
     <body lang="en">
         <header class="centered">
             <img class="logo" alt="GPA Calculator" src="assets/img/logo.png">
+            <?php
+                if(isset($_SESSION)){
+            ?>
+                    <a class="float-right logoff" href="../../index.php"></a>       
+        <?php  }
+            ?>
         </header>
