@@ -7,4 +7,4 @@ This Assignment tests mostly PHP implementations of: Sessions, Cookies, Form han
 <br />
 THIS PROJECT IS NOT PRODUCTION READY, NEITHER ARE ITS CONTENTS, VALIDATION IS LOUSY AND USER DATA IS NOT ENCRYPTED.
 
-<img src="assets/img/screenshot.png" width="200px" height="auto" style="margin-left: auto; margin-right:auto;">
+<img src="assets/img/screenshot.png" width="700px" height="auto" style="margin-left: auto; margin-right:auto;">
