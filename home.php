@@ -41,17 +41,18 @@
             </form>
             <h2>View your Courses:</h2>
             <table id="courses-table">
-                <?php if(isset($user->courses)){?>
+                <?php if(isset($user->courses)){ $rowNumber = 0;?>
                     <tr>
                         <th>Course</th>
                         <th>Credits</th>
                         <th>Grade</th>
                     </tr>
                     <?php foreach($user->courses as $course){?>
-                    <tr>
+                    <tr row-num="<?php echo $rowNumber; $rowNumber++;?>">
                         <td><?php echo $course->name;?></td>
                         <td><?php echo $course->credits;?></td>
                         <td><?php echo $course->grade;?></td>
+                        <td onclick="deleteCourse(this)"><a href="#a"><img class="icon-delete" src="assets/img/delete-icon.png" alt="Delete"></a></td>
                     </tr>
                     <?php }?>
                 <?php }else{?>
@@ -61,11 +62,11 @@
         </div>
         <aside id="sideInfo" class="float-right centered">
             <h2>GPA</h2>
-            <span class="meta centered-block"><?php echo calculateGPA($user->courses);?></span>
+            <span class="meta centered-block" id="gpa"><?php echo calculateGPA($user->courses);?></span>
             <h2>Number of Courses</h2>
-            <span class="meta centered-block"><?php echo getNumCourses($user->courses); ?></span>
+            <span class="meta centered-block" id="numCourses"><?php echo getNumCourses($user->courses); ?></span>
             <h2>Total of Credits</h2>
-            <span class="meta centered-block"><?php echo getNumCredits($user->courses); ?></span>
+            <span class="meta centered-block" id="numCredits"><?php echo getNumCredits($user->courses); ?></span>
         </aside>
     </section>
     

@@ -89,6 +89,9 @@
                 $gpa += ($course->gpaGrade*$course->credits);
                 $credits += $course->credits;
             }
+            if($credits == 0.0){
+                return 0.00;   
+            }
             return number_format($gpa / $credits, 2, '.', '');
         }else
             return 0.00;

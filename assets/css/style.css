@@ -149,6 +149,11 @@ footer{
     background-color: #EEEEEE;   
 }
 
+.icon-delete{
+    width: 50px;
+    height: auto;
+}
+
 /*==============aside=================*/
 
 #sideInfo{
